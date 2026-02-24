@@ -59,7 +59,7 @@ Se requiere un sistema que permita:
 - Reportes administrativos.
 - Alta disponibilidad y seguridad.
 ---
-# CASO 3: ## Sistema de Gestión Académica "Universidad Horizonte"
+# CASO 3: Sistema de Gestión Académica "Universidad Horizonte"
 ### 1. Contexto General
 La universidad cuenta con 4,000 estudiantes y múltiples facultades. Actualmente utiliza sistemas separados para matrícula, pagos y notas.
 Se presentan problemas frecuentes durante el proceso de inscripción académica.
