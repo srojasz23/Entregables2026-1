@@ -158,3 +158,7 @@ Se evaluará:
 - Coherencia entre análisis y diagramas.
 - Correcta aplicación de UML.
 - Sustentación técnica.
+
+Consideracion:
+- La ppt deberan de subir: https://github.com/srojasz23/Entregables2026-1/tree/main/SEMINARIO%20-%20ANALISIS/ANALISIS%20Y%20DISE%C3%91O%20-%20TRABAJO%20FINAL/PPT   
+- EL informe deberna de Subir en la plataforma de Blackboard.
