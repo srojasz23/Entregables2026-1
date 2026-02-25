@@ -1,5 +1,5 @@
 # TRABAJO FINAL: ANÁLISIS Y DISEÑO DE SISTEMAS  
-
+## FECHA DE ENTREGA 10/03/2025  
 CASOS A DESARROLLAR:   
 1. Caso 1: Sistema Integral para Hospital privado "San Gabriel"   (Jan / Damian)
 2. Caso 2: Plataforma Marketplace “Comercio Urbano”  ( Eddie / Jastin ) 
@@ -59,7 +59,7 @@ Se requiere un sistema que permita:
 - Reportes administrativos.
 - Alta disponibilidad y seguridad.
 ---
-# CASO 3: Sistema de Gestión Académica "Universidad Horizonte"
+# CASO 3: Sistema de Gestión Académica "Universidad SENATI"
 ### 1. Contexto General
 La universidad cuenta con 4,000 estudiantes y múltiples facultades. Actualmente utiliza sistemas separados para matrícula, pagos y notas.
 Se presentan problemas frecuentes durante el proceso de inscripción académica.
@@ -162,3 +162,5 @@ Se evaluará:
 Consideracion:
 - La ppt deberan de subir: https://github.com/srojasz23/Entregables2026-1/tree/main/SEMINARIO%20-%20ANALISIS/ANALISIS%20Y%20DISE%C3%91O%20-%20TRABAJO%20FINAL/PPT   
 - EL informe deberna de Subir en la plataforma de Blackboard.
+
+
