@@ -1,11 +1,11 @@
 # TRABAJO FINAL: ANÁLISIS Y DISEÑO DE SISTEMAS  
 
 CASOS A DESARROLLAR:   
-1. Caso 1: Sistema Integral para Hospital privado "San Gabriel"
-2. Caso 2: Plataforma Marketplace “Comercio Urbano”
-3. Caso 3: Sistema de Gestión Académica “SENATI”
-4. Caso 4: Sistema Logístico “TransAndes S.A.”
-5. Caso 5: Sistema Comercial Editorial “Mundo Libro S.A.C.”
+1. Caso 1: Sistema Integral para Hospital privado "San Gabriel"   (Jan / Damian)
+2. Caso 2: Plataforma Marketplace “Comercio Urbano”  ( Eddie / Jastin ) 
+3. Caso 3: Sistema de Gestión Académica “SENATI”  (Moises / Brando ) 
+4. Caso 4: Sistema Logístico “TransAndes S.A.” (Marcos / Francisco )
+5. Caso 5: Sistema Comercial Editorial “Mundo Libro S.A.C.” (Beckan / Wimmer) 
 
 ------ 
 
