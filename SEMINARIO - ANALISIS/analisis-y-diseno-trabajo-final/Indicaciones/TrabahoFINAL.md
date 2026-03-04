@@ -1,5 +1,5 @@
 # TRABAJO FINAL: ANÁLISIS Y DISEÑO DE SISTEMAS  
-## FECHA DE ENTREGA 10/03/2025  
+## FECHA DE ENTREGA 11/03/2025  
 CASOS A DESARROLLAR:   
 1. Caso 1: Sistema Integral para Hospital privado "San Gabriel"   (Jan / Damian)
 2. Caso 2: Plataforma Marketplace “Comercio Urbano”  ( Eddie / Jastin ) 
