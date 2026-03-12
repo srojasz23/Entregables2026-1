@@ -160,7 +160,7 @@ Se evaluará:
 - Sustentación técnica.
 
 Consideracion:
-- La ppt deberan de subir: https://github.com/srojasz23/Entregables2026-1/tree/main/SEMINARIO%20-%20ANALISIS/ANALISIS%20Y%20DISE%C3%91O%20-%20TRABAJO%20FINAL/PPT   
+- La ppt deberan de subir: [https://github.com/srojasz23/Entregables2026-1/tree/main/SEMINARIO%20-%20ANALISIS/ANALISIS%20Y%20DISE%C3%91O%20-%20TRABAJO%20FINAL/PPT ](https://github.com/srojasz23/Entregables2026-1/tree/main/SEMINARIO%20-%20ANALISIS/analisis-y-diseno-trabajo-final/PPT)  
 - EL informe deberna de Subir en la plataforma de Blackboard.
 
 
