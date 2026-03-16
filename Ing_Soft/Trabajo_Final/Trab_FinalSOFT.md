@@ -47,7 +47,7 @@ Cuenta con varias líneas de producción donde se realizan procesos de:
 - Corte
 - Moldeado
 - Soldadura
-- Ensamblaje
+- Ensamblaje  
 A pesar de su crecimiento, la empresa continúa gestionando su **planificación de producción mediante hojas de cálculo y reportes manuales**.  
 Cada jefe de área registra el avance de producción en documentos independientes, lo que dificulta tener una **visión global del estado de las órdenes de fabricación**.
 Este problema se vuelve más evidente cuando se presentan **retrasos en la entrega de productos a los clientes**.
