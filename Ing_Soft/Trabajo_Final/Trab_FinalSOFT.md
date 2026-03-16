@@ -55,7 +55,7 @@ En algunos casos, los pedidos no se completan a tiempo porque los responsables *
 Además, el inventario de materias primas **no está sincronizado con la planificación de producción**, lo que provoca:
 - Detenciones de líneas de producción
 - Acumulación innecesaria de insumos
-- Dificultades para estimar tiempos de entrega
+- Dificultades para estimar tiempos de entrega   
 La empresa considera necesario implementar un sistema que permita **integrar la planificación de producción, el control de inventarios y el seguimiento de órdenes de trabajo**.
 
 ---
