@@ -26,16 +26,16 @@ Como consecuencia se presentan:
 
 - Paradas inesperadas de maquinaria
 - Retrasos en la producción
-- Incremento en los costos de mantenimiento correctivo
+- Incremento en los costos de mantenimiento correctivo  
 
 En algunos casos, equipos críticos han fallado en plena operación debido a que **no se detectaron señales de desgaste a tiempo**.
 
-La gerencia desea evaluar el desarrollo de un sistema tecnológico que permita:
+La gerencia desea evaluar el desarrollo de un sistema tecnológico que permita:  
 
 - Centralizar la información de los equipos
 - Registrar el uso de maquinaria en tiempo real
 - Generar alertas tempranas cuando se detecten posibles fallas
-- Facilitar la planificación del mantenimiento
+- Facilitar la planificación del mantenimiento  
 
 Además, se busca que el sistema pueda **integrarse con sensores instalados en la maquinaria** para recopilar datos automáticamente.
 
@@ -75,13 +75,13 @@ Actualmente, el control de inventarios se realiza mediante **sistemas independie
 Esta falta de integración genera:
 - Inconsistencias en la información del inventario
 - Ventas de productos no registrados en almacén
-- Pedidos duplicados o innecesarios
+- Pedidos duplicados o innecesarios  
 
-Además, la empresa tiene dificultades para identificar:
-- Productos de mayor rotación
-- Productos con bajo movimiento
-- Niveles adecuados de reposición de inventario
-Esto afecta la **planificación de compras y la gestión eficiente del inventario**.
+Además, la empresa tiene dificultades para identificar:  
+- Productos de mayor rotación  
+- Productos con bajo movimiento  
+- Niveles adecuados de reposición de inventario  
+Esto afecta la **planificación de compras y la gestión eficiente del inventario**.  
 La empresa busca desarrollar un sistema que permita **integrar compras, inventario y ventas en una sola plataforma**, permitiendo mejorar la trazabilidad de los productos y la toma de decisiones.
 
 ---
@@ -92,51 +92,51 @@ Cuenta con **varios equipos de desarrollo que trabajan simultáneamente en múlt
 Actualmente, cada equipo utiliza diferentes herramientas para:
 - Registrar tareas
 - Documentar avances
-- Comunicarse entre los miembros del equipo
-Algunos equipos utilizan herramientas especializadas de gestión de proyectos, mientras que otros trabajan con **hojas de cálculo o documentos compartidos**.
-Esta diversidad de herramientas dificulta:
+- Comunicarse entre los miembros del equipo  
+Algunos equipos utilizan herramientas especializadas de gestión de proyectos, mientras que otros trabajan con **hojas de cálculo o documentos compartidos**.  
+Esta diversidad de herramientas dificulta:  
 - El seguimiento del avance de los proyectos
-- La coordinación entre equipos
-- La consolidación de información para la gerencia
-Como consecuencia, algunos proyectos presentan:
-- Retrasos en las entregas
-- Problemas de comunicación entre equipos
-- Dificultades para monitorear el progreso real de los proyectos
-La empresa desea desarrollar una plataforma interna que permita **gestionar proyectos, registrar tareas, monitorear avances y facilitar la colaboración entre los equipos de desarrollo**.
+- La coordinación entre equipos  
+- La consolidación de información para la gerencia  
+Como consecuencia, algunos proyectos presentan:  
+- Retrasos en las entregas  
+- Problemas de comunicación entre equipos  
+- Dificultades para monitorear el progreso real de los proyectos  
+La empresa desea desarrollar una plataforma interna que permita **gestionar proyectos, registrar tareas, monitorear avances y facilitar la colaboración entre los equipos de desarrollo**.  
 
 ---
 ## Caso 5: Gestión de Infraestructura en una Empresa de Telecomunicaciones
 La empresa **TeleAndes Comunicaciones** es un proveedor regional de servicios de **internet y telefonía**.
-La infraestructura tecnológica incluye:
-- Antenas de transmisión
-- Centros de datos
-- Equipos de red
-- Routers y estaciones de comunicación
+La infraestructura tecnológica incluye:  
+- Antenas de transmisión  
+- Centros de datos  
+- Equipos de red  
+- Routers y estaciones de comunicación  
 
-Estos equipos se encuentran distribuidos en diferentes ciudades.
-El monitoreo de la infraestructura se realiza mediante **herramientas independientes que no están integradas entre sí**.
-Cuando ocurre una falla en el servicio, los técnicos deben revisar **múltiples sistemas para identificar el origen del problema**.
-Este proceso puede tardar varias horas y genera:
-- Interrupciones prolongadas del servicio
-- Reclamos de clientes
-- Dificultades para gestionar incidentes
+Estos equipos se encuentran distribuidos en diferentes ciudades.  
+El monitoreo de la infraestructura se realiza mediante **herramientas independientes que no están integradas entre sí**.  
+Cuando ocurre una falla en el servicio, los técnicos deben revisar **múltiples sistemas para identificar el origen del problema**.  
+Este proceso puede tardar varias horas y genera:  
+- Interrupciones prolongadas del servicio  
+- Reclamos de clientes  
+- Dificultades para gestionar incidentes  
 
-Además, la empresa no cuenta con un sistema centralizado que permita:
+Además, la empresa no cuenta con un sistema centralizado que permita:  
 
-- Registrar incidentes
-- Programar mantenimientos preventivos
-- Monitorear el rendimiento de la red
-- Generar reportes de disponibilidad del servicio
-La gerencia busca implementar una plataforma que permita **gestionar la infraestructura de telecomunicaciones de manera centralizada y en tiempo real**.
+- Registrar incidentes  
+- Programar mantenimientos preventivos  
+- Monitorear el rendimiento de la red  
+- Generar reportes de disponibilidad del servicio  
+La gerencia busca implementar una plataforma que permita **gestionar la infraestructura de telecomunicaciones de manera centralizada y en tiempo real**.  
 
 ---
 # Entregables del Trabajo Final
-El trabajo se realizará **en grupos**.
-Cada grupo deberá entregar:
-1. **Presentación del proyecto (PPT)**  
-2. **Informe técnico del proyecto**
+El trabajo se realizará **en grupos**.  
+Cada grupo deberá entregar:  
+1. **Presentación del proyecto (PPT)**     
+2. **Informe técnico del proyecto** 
 ---
-# Presentación del Proyecto
+# Presentación del Proyecto  
 La presentación deberá tener un **máximo de 15 diapositivas**.
 ## Contenido sugerido
 1. Portada
