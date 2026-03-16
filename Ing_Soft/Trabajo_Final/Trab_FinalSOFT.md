@@ -48,10 +48,10 @@ Cuenta con varias líneas de producción donde se realizan procesos de:
 - Moldeado
 - Soldadura
 - Ensamblaje
-A pesar de su crecimiento, la empresa continúa gestionando su **planificación de producción mediante hojas de cálculo y reportes manuales**.
+A pesar de su crecimiento, la empresa continúa gestionando su **planificación de producción mediante hojas de cálculo y reportes manuales**.  
 Cada jefe de área registra el avance de producción en documentos independientes, lo que dificulta tener una **visión global del estado de las órdenes de fabricación**.
 Este problema se vuelve más evidente cuando se presentan **retrasos en la entrega de productos a los clientes**.
-En algunos casos, los pedidos no se completan a tiempo porque los responsables **no detectan a tiempo la falta de materiales o los cuellos de botella** en determinadas etapas del proceso.
+En algunos casos, los pedidos no se completan a tiempo porque los responsables **no detectan a tiempo la falta de materiales o los cuellos de botella** en determinadas etapas del proceso.  
 Además, el inventario de materias primas **no está sincronizado con la planificación de producción**, lo que provoca:
 - Detenciones de líneas de producción
 - Acumulación innecesaria de insumos
