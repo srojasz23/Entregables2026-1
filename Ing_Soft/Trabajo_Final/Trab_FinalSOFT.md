@@ -1,7 +1,7 @@
 # Trabajo Final – Ingeniería de Software
 ## FECHA DE ENTREGA: 08/04/2026  
-El trabajo se desarrollará **en grupos** y culminará con:
-- **Una presentación del proyecto**
+El trabajo se desarrollará **en grupos de 2** y culminará con:
+- **Exposición**
 - **Un informe técnico**
 ---
 # Casos de Estudio
