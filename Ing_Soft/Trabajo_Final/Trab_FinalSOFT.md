@@ -160,7 +160,7 @@ La presentación deberá tener un **máximo de 15 diapositivas**.
 El proyecto deberá incluir los siguientes diagramas UML:
 - Diagrama de Casos de Uso
 - Diagrama de Clases
-- Diagrama de Actividades
+- Diagrama de Actividades  
 Opcionalmente se pueden incluir:
 - Diagrama de Componentes
 - Diagrama de Despliegue
