@@ -150,7 +150,7 @@ La presentación deberá tener un **máximo de 15 diapositivas**.
 9. Diagrama de Clases
 10. Diagrama de Actividades
 11. Arquitectura del sistema
-12. Prototipo de interfaz
+12. Prototipo de interfaz ( Figma, Balsamiq, .. )   
 13. Metodología de desarrollo
 14. Beneficios de la solución
 15. Conclusiones
