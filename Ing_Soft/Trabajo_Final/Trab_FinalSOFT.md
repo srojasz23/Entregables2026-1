@@ -206,5 +206,5 @@ El informe deberá ser subido en **Blackboard** en formato:  PDF
 
 # Exposición del Proyecto
 Cada grupo realizará una **exposición del proyecto**.
-Duración aproximada: **10 a 12 minutos por grupo**
+Duración aproximada: **10 a 15 minutos por grupo**
 Todos los integrantes del grupo deberán participar.
