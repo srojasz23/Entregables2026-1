@@ -161,7 +161,7 @@ El proyecto deberá incluir los siguientes diagramas UML:
 - Diagrama de Casos de Uso
 - Diagrama de Clases
 - Diagrama de Actividades  
-Opcionalmente se pueden incluir:
+Incluir:
 - Diagrama de Componentes
 - Diagrama de Despliegue
 
