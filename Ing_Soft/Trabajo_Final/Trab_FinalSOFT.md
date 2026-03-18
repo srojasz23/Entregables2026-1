@@ -180,14 +180,13 @@ Presentación de prototipos de las principales pantallas del sistema.
 ## 8. Metodología de Desarrollo
 Cada grupo deberá **analizar el caso de estudio y determinar la metodología de desarrollo de software más adecuada para el proyecto**.
 La metodología elegida deberá ser justificar del porque su elección en función de las características del problema planteado.
-En esta sección deberán explicar:
-- La metodología de desarrollo seleccionada
-- La justificación de la elección
-- La organización del equipo de trabajo
-- Las etapas o fases del desarrollo del sistema
-- Cómo se gestionará el avance del proyecto
-La metodología seleccionada debe estar **claramente relacionada con el contexto del caso de estudio**.
-
+En esta sección deberán desarrollar lo siguiente:  
+- La metodología de gestión de proyectos y desarrollo de software seleccionada  
+- La justificación de la elección, explicando por qué es la más adecuada para el caso  
+- La organización del equipo de trabajo según la metodología elegida  
+- Las etapas, fases o iteraciones del desarrollo del sistema  
+- La forma en que se gestionará el avance del proyecto (seguimiento, control, entregables, etc.)  
+La metodología seleccionada debe estar claramente alineada con el contexto del caso de estudio y evidenciar una correcta comprensión de su aplicación.  
 ---
 
 # Entrega de Archivos
@@ -198,7 +197,7 @@ El repositorio deberá contener:
 - Diagramas UML
 - Prototipos del sistema
 - Documentación adicional del proyecto
-- 
+- Enlace: https://github.com/srojasz23/Entregables2026-1/tree/main/Ing_Soft/PPT   
 ## Informe Técnico
 El informe deberá ser subido en **Blackboard** en formato:  PDF  
 
