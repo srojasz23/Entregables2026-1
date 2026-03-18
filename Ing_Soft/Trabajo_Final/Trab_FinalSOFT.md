@@ -5,11 +5,11 @@ El trabajo se desarrollará **en grupos de 2** y culminará con:
 - **Un informe técnico**
 ---
 # Casos de Estudio
-- Caso 1: Operaciones Mineras y Falta de Información en Tiempo Real
-- Caso 2: Problemas de Planificación en una Empresa Manufacturera
-- Caso 3: Control de Inventarios en una Empresa de Importación 
-- Caso 4: Gestión de Proyectos en una Empresa de Desarrollo de Software
-- Caso 5: Gestión de Infraestructura en una Empresa de Telecomunicaciones
+- Caso 1: Operaciones Mineras y Falta de Información en Tiempo Real  (GRUPO 2: MARCOS - BECKAN)
+- Caso 2: Problemas de Planificación en una Empresa Manufacturera  (GRUPO 1 : BRANCO - JAN )
+- Caso 3: Control de Inventarios en una Empresa de Importación  (GRUPO 3: EDDIE - WIMMER )   
+- Caso 4: Gestión de Proyectos en una Empresa de Desarrollo de Software  (GRUPO 5: JASTIN - PEDRO)  
+- Caso 5: Gestión de Infraestructura en una Empresa de Telecomunicaciones (GRUPO 4: FRANCISCO - MOISES)   
 ---
 
 ## Caso 1: Operaciones Mineras y Falta de Información en Tiempo Real
