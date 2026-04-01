@@ -148,17 +148,21 @@ La presentación deberá tener un **máximo de 15 diapositivas**.
 7. Requerimientos no funcionales
 8. Diagrama de Casos de Uso
 9. Diagrama de Clases
-10. Diagrama de Actividades
-11. Arquitectura del sistema
-12. Prototipo de interfaz ( Figma, Balsamiq, .. )   
-13. Metodología de Proyecto (Fases, riesgos, entregables)
-14. Beneficios de la solución
-15. Conclusiones (2)
+10. Diagrama de Secuencia
+11. Diagrama BPMN   
+12. Diagrama de Actividades
+13. Arquitectura del sistema
+14. Prototipo de interfaz ( Figma, Balsamiq, .. )   
+15. Metodología de Proyecto (Fases, riesgos, entregables)
+16. Beneficios de la solución
+17. Conclusiones (2)
 ---
 
 ## Considerar: 
 El proyecto deberá incluir los siguientes diagramas UML:
 - Diagrama de Casos de Uso
+- Diagrama BPMN
+- Diagrama de Secuencia
 - Diagrama de Clases
 - Diagrama de Actividades  
 Incluir:
