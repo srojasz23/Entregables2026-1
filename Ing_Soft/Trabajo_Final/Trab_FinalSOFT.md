@@ -199,7 +199,7 @@ La PPT  ser subida a **GitHub**.
 El repositorio deberá contener:
 - Presentación en PPT
 - Diagramas UML
-- Prototipos del sistema
+- Prototipos del sistema - compartir enlace al correo: srojasz@senati.pe 
 - Documentación adicional del proyecto
 - Enlace: https://github.com/srojasz23/Entregables2026-1/tree/main/Ing_Soft/PPT   
 ## Informe Técnico
