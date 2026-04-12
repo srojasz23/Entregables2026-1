@@ -109,7 +109,7 @@
 
 ## Estructura sugerida para la entrega
 
-Cada grupo debe entregar su caso en una PPT con la siguiente estructura:
+Cada grupo debe entregar su caso en una PPT con la siguiente estructura:  
 • Portada con nombres del grupo.  
 • Desarrollo de las preguntas.  
 • Conclusiones individuales (una por integrante).  
