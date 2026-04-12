@@ -93,7 +93,7 @@
 
 3. ¿Qué flujo de OAuth 2.0 usarías para una aplicación web en ASP.NET Core? ¿Qué diferencia hay entre el flujo Authorization Code y el flujo Client Credentials?
 
-4. Implementa en C# un endpoint protegido con `[Authorize(Roles = "Admin")]`. ¿Cómo se incluye el rol del usuario dentro del token y cómo lo valida .NET?
+4. ¿Qué es la autorización basada en roles (RBAC) y cómo se diferencia de la autorización basada en claims? ¿En qué escenario empresarial real conviene usar una u otra dentro de una aplicación ASP.NET Core?
 
 5. ¿Por qué no se debe guardar una contraseña en texto plano? Explica el concepto de hash + salt e implementa un ejemplo en C# usando `BCrypt.Net` o `PBKDF2`.
 
