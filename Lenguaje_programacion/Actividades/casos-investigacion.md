@@ -1,10 +1,6 @@
 # 📚 Casos de Investigación — C# / .NET
 
 **Curso:** Lenguaje de Programación  
-**Nivel:** Avanzado (4to ciclo en adelante)  
-**Tecnología:** C# / .NET  
-**Temas:** POO · Patrones de Diseño · APIs REST · Estructuras de Datos · Seguridad
-
 ---
 
 ## Índice
