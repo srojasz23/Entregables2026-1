@@ -20,7 +20,7 @@ El repositorio debe contener lo siguiente:
    - Backup `.bak`
 4. **Documentación completa**, siguiendo la estructura indicada en el siguiente enlace:
 
-   👉 https://github.com/srojasz23/TrabajoGrupal/blob/main/TrabajoFinal.md
+   👉 https://github.com/srojasz23/Entregables2026-1/blob/main/Lenguaje_programacion/Trabajo_Final/Trabajo_entre.md
 
 > **Nota:** El repositorio debe estar configurado como **público**.
 
