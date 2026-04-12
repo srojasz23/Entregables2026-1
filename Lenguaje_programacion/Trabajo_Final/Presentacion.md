@@ -32,8 +32,9 @@ En la plataforma **Blackboard**, deberán subir:
 
 - El **enlace del repositorio** en GitHub (público y accesible).
 - Las **respuestas a las preguntas finales del proyecto**:
-  - Adjuntar un archivo (Word o PDF) de acuerdo al formato de SENATI.
-
+  - Adjuntar un archivo (Word o PDF) de acuerdo al formato de SENATI.  
+    
+En GIT subiran todo el codigo fuente, BD, instalador y documentacion. 
 ---
 
 ## ⏰ Fecha Límite de Entrega
