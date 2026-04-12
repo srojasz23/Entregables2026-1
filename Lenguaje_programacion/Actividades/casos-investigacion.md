@@ -40,9 +40,6 @@
 
 9. Bibliografía.
 
-### Temas clave
-`herencia` `polimorfismo` `interfaces` `Observer` `Factory` `SOLID`
-
 ---
 
 ## Caso 2 — Netflix · Arquitectura MVC y APIs REST
@@ -68,9 +65,6 @@
 
 9. Bibliografía.
 
-### Temas clave
-`ASP.NET Core` `MVC` `REST` `JSON` `Swagger` `HTTP status codes`
-
 ---
 
 ## Caso 3 — Uber · Estructuras de Datos y Algoritmos
@@ -94,9 +88,6 @@
 8. Conclusiones individuales.
 
 9. Bibliografía.
-
-### Temas clave
-`Big O` `PriorityQueue` `Dictionary` `Dijkstra` `grafos` `List vs Queue`
 
 ---
 
@@ -122,34 +113,13 @@
 
 9. Bibliografía.
 
-### Temas clave
-`JWT` `OAuth 2.0` `roles` `hash + salt` `BCrypt` `XSS` `CSRF` `SQL Injection`
-
 ---
 
 ## Estructura sugerida para la entrega
 
-Cada grupo debe entregar su caso en una carpeta con la siguiente estructura:
+Cada grupo debe entregar su caso en una PPT con la siguiente estructura:
+• Portada con nombres del grupo.  
+• Desarrollo de las preguntas.  
+• Conclusiones individuales (una por integrante).  
+• Bibliografía (fuentes confiables).  
 
-```
-caso-X-empresa/
-├── README.md          ← respuestas redactadas
-├── src/
-│   └── *.cs           ← implementaciones en C#
-└── referencias.md     ← bibliografía con links
-```
-
----
-
-## Resumen de casos
-
-| # | Empresa | Tema principal | Temas clave |
-|---|---------|---------------|-------------|
-| 1 | Spotify | POO + Patrones de Diseño | SOLID, Factory, Observer |
-| 2 | Netflix | MVC + APIs REST | ASP.NET Core, JSON, Swagger |
-| 3 | Uber | Estructuras de Datos + Algoritmos | Big O, Dijkstra, PriorityQueue |
-| 4 | Azure AD | Seguridad + Autenticación | JWT, OAuth 2.0, BCrypt |
-
----
-
-> **Nota:** Cada caso incluye una pregunta de propuesta propia (número 7) que es abierta e intencional. No existe una respuesta única correcta — se evalúa el criterio técnico y la justificación.
