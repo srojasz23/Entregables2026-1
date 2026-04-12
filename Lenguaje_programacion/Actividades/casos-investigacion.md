@@ -3,7 +3,7 @@
 **Curso:** Lenguaje de Programación  
 ---
 
-## Trabajos
+## CASOS
 
 - [Caso 1 — Spotify · POO y Patrones de Diseño](#caso-1--spotify--poo-y-patrones-de-diseño)
 - [Caso 2 — Netflix · Arquitectura MVC y APIs REST](#caso-2--netflix--arquitectura-mvc-y-apis-rest)
