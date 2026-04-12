@@ -1,5 +1,9 @@
 # 💼 PDSD-437_TRABAJOFINAL — Tech Solutions  
-### 📘 Proyecto Final: Aplicación Empresarial en Microsoft Visual Studio .NET
+### 📘 Proyecto Final: Aplicación Empresarial en Microsoft Visual Studio .NET  
+- Grupo 1:
+- Grupo 2:
+- Grupo 3:
+- Grupo 4:  
 
 ---
 
