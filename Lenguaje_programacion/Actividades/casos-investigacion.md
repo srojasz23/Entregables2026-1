@@ -20,8 +20,6 @@
 
 ### Contexto
 
-Spotify es una de las plataformas de streaming de audio más grandes del mundo, con más de 600 millones de usuarios. Detrás de su experiencia fluida existe un sistema de software sofisticado que organiza canciones, podcasts, audiolibros y listas de reproducción. Su arquitectura interna emplea principios de diseño orientado a objetos y patrones bien conocidos para mantener un código escalable y fácil de mantener.
-
 ### Preguntas de investigación
 
 1. ¿Qué relación existe entre los principios SOLID y el diseño de clases en C#? Explica cada principio con un ejemplo aplicado al dominio de Spotify.
@@ -49,9 +47,6 @@ Spotify es una de las plataformas de streaming de audio más grandes del mundo, 
 
 ## Caso 2 — Netflix · Arquitectura MVC y APIs REST
 
-### Contexto
-
-Netflix empezó como un servicio de alquiler de DVDs y hoy es una plataforma global con más de 260 millones de suscriptores. Su backend evolucionó desde una arquitectura monolítica hacia microservicios, y expone toda su funcionalidad mediante APIs REST. Comprender cómo organiza sus capas de presentación, lógica y datos es clave para entender el patrón MVC en entornos reales de alta demanda.
 
 ### Preguntas de investigación
 
@@ -80,10 +75,6 @@ Netflix empezó como un servicio de alquiler de DVDs y hoy es una plataforma glo
 
 ## Caso 3 — Uber · Estructuras de Datos y Algoritmos
 
-### Contexto
-
-Uber procesa millones de solicitudes de viaje simultáneamente en todo el mundo. En cada segundo, su sistema debe encontrar el conductor más cercano, calcular la ruta óptima, estimar precios y gestionar colas de espera. Ninguna de estas operaciones sería posible sin una selección cuidadosa de estructuras de datos y algoritmos eficientes. La diferencia entre una elección correcta e incorrecta puede costar segundos de latencia a escala global.
-
 ### Preguntas de investigación
 
 1. ¿Qué es la complejidad algorítmica (Big O) y por qué es crítica cuando un sistema tiene millones de usuarios simultáneos? Pon ejemplos concretos con operaciones de búsqueda e inserción.
@@ -110,10 +101,6 @@ Uber procesa millones de solicitudes de viaje simultáneamente en todo el mundo.
 ---
 
 ## Caso 4 — Microsoft Azure AD · Seguridad y Autenticación
-
-### Contexto
-
-Azure Active Directory (ahora Microsoft Entra ID) es el servicio de gestión de identidades y accesos más usado en entornos empresariales, protegiendo más de 1.000 millones de inicios de sesión diarios. Su arquitectura de seguridad combina estándares abiertos como OAuth 2.0 y OpenID Connect con mecanismos propietarios de detección de amenazas. Entender cómo funciona es fundamental para cualquier desarrollador .NET que construya aplicaciones empresariales.
 
 ### Preguntas de investigación
 
