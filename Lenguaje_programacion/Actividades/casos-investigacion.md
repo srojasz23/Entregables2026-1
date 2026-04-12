@@ -14,8 +14,6 @@
 
 ## Caso 1 — Spotify · POO y Patrones de Diseño
 
-### Contexto
-
 ### Preguntas de investigación
 
 1. ¿Qué relación existe entre los principios SOLID y el diseño de clases en C#? Explica cada principio con un ejemplo aplicado al dominio de Spotify.
@@ -39,7 +37,6 @@
 ---
 
 ## Caso 2 — Netflix · Arquitectura MVC y APIs REST
-
 
 ### Preguntas de investigación
 
@@ -88,7 +85,6 @@
 ---
 
 ## Caso 4 — Microsoft Azure AD · Seguridad y Autenticación
-
 ### Preguntas de investigación
 
 1. ¿Cuál es la diferencia entre autenticación y autorización? ¿Cómo las gestiona ASP.NET Core de forma independiente?
