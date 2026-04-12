@@ -3,13 +3,18 @@
 **Curso:** Lenguaje de Programación  
 ---
 
-## Índice
+## Trabajos
 
 - [Caso 1 — Spotify · POO y Patrones de Diseño](#caso-1--spotify--poo-y-patrones-de-diseño)
 - [Caso 2 — Netflix · Arquitectura MVC y APIs REST](#caso-2--netflix--arquitectura-mvc-y-apis-rest)
 - [Caso 3 — Uber · Estructuras de Datos y Algoritmos](#caso-3--uber--estructuras-de-datos-y-algoritmos)
 - [Caso 4 — Microsoft Azure AD · Seguridad y Autenticación](#caso-4--microsoft-azure-ad--seguridad-y-autenticación)
 
+GRUPOs:  
+- Grupo 1  
+- Grupo 2  
+- Grupo 3  
+- Grupo 4  
 ---
 
 ## Caso 1 — Spotify · POO y Patrones de Diseño
