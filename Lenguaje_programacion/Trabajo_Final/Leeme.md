@@ -38,7 +38,7 @@ En la plataforma **Blackboard**, deberán subir:
 
 ## ⏰ Fecha Límite de Entrega
 
-**Viernes 14/11/2025**
+**Miercoles 06/05/2026**
 
 > Se revisará el trabajo directamente desde GitHub.
 
