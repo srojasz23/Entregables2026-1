@@ -11,10 +11,10 @@
 - [Caso 4 — Microsoft Azure AD · Seguridad y Autenticación](#caso-4--microsoft-azure-ad--seguridad-y-autenticación)
 
 GRUPOs:  
-- Grupo 1  
-- Grupo 2  
-- Grupo 3  
-- Grupo 4  
+- Grupo 1   - CASO 4: Eddy y Francisco
+- Grupo 2  - CASO 3: Brando y Moises
+- Grupo 3   - CASO 2: Marco y Wimmer 
+- Grupo 4   - CASO 1: Pedro, Jean y Beckan
 ---
 
 ## Caso 1 — Spotify · POO y Patrones de Diseño
