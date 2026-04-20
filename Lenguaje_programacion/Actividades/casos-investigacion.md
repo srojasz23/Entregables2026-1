@@ -17,7 +17,7 @@ GRUPOs:
 - Grupo 4   - CASO 1: Pedro, Jean y Beckan
 ---
 
-## Caso 1 — Spotify · POO y Patrones de Diseño
+## Caso 1 — Spotify
 
 ### Preguntas de investigación
 
@@ -41,8 +41,7 @@ GRUPOs:
 
 ---
 
-## Caso 2 — Netflix · Arquitectura MVC y APIs REST
-
+## Caso 2 — Netflix 
 ### Preguntas de investigación
 
 1. ¿Cómo separa ASP.NET Core las responsabilidades entre Model, View y Controller? Dibuja el flujo de una solicitud HTTP dentro de ese patrón.
@@ -65,7 +64,7 @@ GRUPOs:
 
 ---
 
-## Caso 3 — Uber · Estructuras de Datos y Algoritmos
+## Caso 3 — Uber 
 
 ### Preguntas de investigación
 
@@ -89,7 +88,7 @@ GRUPOs:
 
 ---
 
-## Caso 4 — Microsoft Azure AD · Seguridad y Autenticación
+## Caso 4 — Microsoft Azure AD 
 ### Preguntas de investigación
 
 1. ¿Cuál es la diferencia entre autenticación y autorización? ¿Cómo las gestiona ASP.NET Core de forma independiente?
