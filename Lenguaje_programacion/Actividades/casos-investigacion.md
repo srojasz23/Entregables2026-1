@@ -5,10 +5,10 @@
 
 ## CASOS
 
-- [Caso 1 — Spotify · POO y Patrones de Diseño](#caso-1--spotify)
-- [Caso 2 — Netflix · Arquitectura MVC y APIs REST](#caso-2--netflix)
-- [Caso 3 — Uber · Estructuras de Datos y Algoritmos](#caso-3--uber)
-- [Caso 4 — Microsoft Azure AD · Seguridad y Autenticación](#caso-4--microsoft-azure-ad)
+- [Caso 1 — Spotify ](#caso-1--spotify)
+- [Caso 2 — Netflix ](#caso-2--netflix)
+- [Caso 3 — Uber ](#caso-3--uber)
+- [Caso 4 — Microsoft Azure AD](#caso-4--microsoft-azure-ad)
 
 GRUPOs:  
 - Grupo 1   - CASO 4: Eddy y Francisco
