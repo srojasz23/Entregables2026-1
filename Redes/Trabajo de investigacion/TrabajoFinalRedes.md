@@ -1,6 +1,5 @@
 # TRABAJO FINAL DE REDES DE COMPUTADORAS  - DESARROLLO DE SOFTWARE
 ### Curso: Redes de Computadoras  
-### Grupos: 4 grupos de 4 estudiantes  
 
 ---
 
@@ -18,10 +17,6 @@ Los temas son:
 ---
 
 # 🧩 1️⃣ TEMA: Importancia de las redes en el Desarrollo de Software
-
-## 🎯 Objetivo
-Analizar y explicar la relevancia de las redes de computadoras en el funcionamiento de tecnologías, plataformas y servicios digitales, comparando cómo la conectividad influye en el rendimiento, la disponibilidad y la comunicación entre sistemas.
-
 ## ✔ Puntos a  revisar
 1. Explicar qué es una red de computadoras y su papel en el ecosistema tecnológico actual.  
 2. Detallar cómo las redes permiten el funcionamiento e interconexión de aplicaciones, servicios, frameworks y plataformas.  
@@ -35,9 +30,6 @@ Analizar y explicar la relevancia de las redes de computadoras en el funcionamie
 ---
 
 # 🌐 2️⃣ TEMA: Protocolos TCP/IP y su rol en aplicaciones Web y Móviles*
-
-## 🎯 Objetivo
-Analizar y explicar el funcionamiento de los protocolos TCP/IP y su rol en la comunicación de aplicaciones web y móviles, comparando su desempeño en diversos escenarios y respaldando el análisis con ejemplos de casos de éxito y fallos conocidos.
 
 ## ✔ Puntos a  revisar
 1. Explicar el modelo TCP/IP y sus capas con claridad técnica.  
@@ -53,9 +45,6 @@ Analizar y explicar el funcionamiento de los protocolos TCP/IP y su rol en la co
 
 # 🔒 3️⃣ TEMA: Impacto de la Ciberseguridad de red en el Desarrollo de Sistemas
 
-## 🎯 Objetivo
-Analizar y explicar cómo la ciberseguridad de red influye en la protección de sistemas, datos y plataformas digitales, comparando casos donde las medidas de seguridad evitaron ataques y casos donde la falta de protección generó vulnerabilidades críticas.
-
 ## ✔ Puntos a  revisar
 1. Explicar qué es la ciberseguridad de red y por qué es esencial en entornos tecnológicos.  
 2. Describir y analizar ataques comunes: MITM, sniffing, ARP spoofing, DoS.  
@@ -69,10 +58,6 @@ Analizar y explicar cómo la ciberseguridad de red influye en la protección de 
 ---
 
 # 🧱 4️⃣ TEMA: Relación del Modelo OSI con el funcionamiento de una aplicación
-
-## 🎯 Objetivo
-Analizar y explicar cómo las capas del modelo OSI intervienen en el funcionamiento de las aplicaciones modernas, comparando escenarios de comunicación exitosa con casos donde errores en determinadas capas generan fallos en sistemas y servicios.
-
 ## ✔ Puntos a  revisar
 1. Describir de manera técnica las 7 capas del modelo OSI.  
 2. Explicar cómo la comunicación entre dispositivos sigue la estructura del modelo OSI.  
@@ -125,7 +110,7 @@ Debe de incluir:
 - Diseño profesional.  
 - Introducción al tema.  
 - Desarrollo del tema  
-- 4 conclusiones y reflexión del grupo.  
+- Conclusiones y reflexión del grupo.  
 - Evitar exceso de texto.
 
 ---
@@ -137,12 +122,6 @@ Cada grupo debe subir a la plataforma de BB el Informe en PDF
 Subir en GitHub  y compartirlo con el usuario: srojasz23
 - 📄 Informe completo (PDF)
 - 📊 Presentación en PPT  
-
-
----
-
-# 🏁 Notita
-Este proyecto busca desarrollar investigación formal, pensamiento crítico, análisis técnico y aplicación de los conceptos del curso en el entorno real de la tecnología moderna.   
 
 # Grupos   
 <img width="864" height="333" alt="image" src="https://github.com/user-attachments/assets/d9aeff33-da42-4f30-aaae-e46daacffdbc" />
