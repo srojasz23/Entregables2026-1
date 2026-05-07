@@ -17,7 +17,7 @@ Los temas son:
 ---
 
 # 🧩 1️⃣ TEMA: Importancia de las redes en el Desarrollo de Software
-## ✔ Puntos a  revisar
+## ✔ Contenido
 1. Explicar qué es una red de computadoras y su papel en el ecosistema tecnológico actual.  
 2. Detallar cómo las redes permiten el funcionamiento e interconexión de aplicaciones, servicios, frameworks y plataformas.  
 3. Analizar la relación entre redes y arquitecturas tecnológicas (cliente/servidor, web, móvil, cloud).  
@@ -30,8 +30,7 @@ Los temas son:
 ---
 
 # 🌐 2️⃣ TEMA: Protocolos TCP/IP y su rol en aplicaciones Web y Móviles*
-
-## ✔ Puntos a  revisar
+## ✔ Contenido
 1. Explicar el modelo TCP/IP y sus capas con claridad técnica.  
 2. Detallar el funcionamiento de TCP (handshake, confiabilidad y control de flujo).  
 3. Comparar TCP vs. UDP (ventajas, desventajas y casos de uso).  
@@ -44,8 +43,7 @@ Los temas son:
 ---
 
 # 🔒 3️⃣ TEMA: Impacto de la Ciberseguridad de red en el Desarrollo de Sistemas
-
-## ✔ Puntos a  revisar
+## ✔ Contenido
 1. Explicar qué es la ciberseguridad de red y por qué es esencial en entornos tecnológicos.  
 2. Describir y analizar ataques comunes: MITM, sniffing, ARP spoofing, DoS.  
 3. Explicar la importancia del cifrado HTTPS/TLS y certificados digitales.  
@@ -58,7 +56,7 @@ Los temas son:
 ---
 
 # 🧱 4️⃣ TEMA: Relación del Modelo OSI con el funcionamiento de una aplicación
-## ✔ Puntos a  revisar
+## ✔ Contenido
 1. Describir de manera técnica las 7 capas del modelo OSI.  
 2. Explicar cómo la comunicación entre dispositivos sigue la estructura del modelo OSI.  
 3. Analizar el rol de las capas 7, 4 y 3 en tecnologías actuales.  
@@ -123,8 +121,6 @@ Subir en GitHub  y compartirlo con el usuario: srojasz23
 - 📄 Informe completo (PDF)
 - 📊 Presentación en PPT  
 
-# Grupos   
-<img width="864" height="333" alt="image" src="https://github.com/user-attachments/assets/d9aeff33-da42-4f30-aaae-e46daacffdbc" />
 
 
 
