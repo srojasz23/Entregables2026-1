@@ -29,7 +29,7 @@ Los temas son:
 
 ---
 
-# 🌐 2️⃣ TEMA: Protocolos TCP/IP y su rol en aplicaciones Web y Móviles*
+# 🌐 2️⃣ TEMA: Protocolos TCP/IP y su rol en aplicaciones Web y Móviles
 ## ✔ Contenido
 1. Explicar el modelo TCP/IP y sus capas con claridad técnica.  
 2. Detallar el funcionamiento de TCP (handshake, confiabilidad y control de flujo).  
