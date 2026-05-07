@@ -1,0 +1,366 @@
+CREATE DATABASE TechSolutions;
+GO
+
+USE TechSolutions;
+GO
+
+-- =============================================
+-- TABLAS
+-- =============================================
+
+CREATE TABLE Roles (
+    RolID INT PRIMARY KEY IDENTITY,
+    Nombre NVARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Usuarios (
+    UsuarioID INT PRIMARY KEY IDENTITY,
+    Nombre NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) UNIQUE NOT NULL,
+    Contrasena NVARCHAR(255) NOT NULL,
+    RolID INT FOREIGN KEY REFERENCES Roles(RolID),
+    Activo BIT DEFAULT 1,
+    FechaCreacion DATETIME DEFAULT GETDATE()
+);
+
+CREATE TABLE Categorias (
+    CategoriaID INT PRIMARY KEY IDENTITY,
+    Nombre NVARCHAR(100) NOT NULL,
+    Descripcion NVARCHAR(255)
+);
+
+CREATE TABLE Productos (
+    ProductoID INT PRIMARY KEY IDENTITY,
+    Nombre NVARCHAR(150) NOT NULL,
+    Descripcion NVARCHAR(255),
+    Precio DECIMAL(10,2) NOT NULL,
+    Stock INT DEFAULT 0,
+    StockMinimo INT DEFAULT 5,
+    CategoriaID INT FOREIGN KEY REFERENCES Categorias(CategoriaID),
+    Activo BIT DEFAULT 1,
+    FechaCreacion DATETIME DEFAULT GETDATE()
+);
+
+CREATE TABLE Clientes (
+    ClienteID INT PRIMARY KEY IDENTITY,
+    Nombre NVARCHAR(150) NOT NULL,
+    Email NVARCHAR(100),
+    Telefono NVARCHAR(20),
+    Direccion NVARCHAR(255),
+    FechaRegistro DATETIME DEFAULT GETDATE()
+);
+
+CREATE TABLE Ventas (
+    VentaID INT PRIMARY KEY IDENTITY,
+    ClienteID INT FOREIGN KEY REFERENCES Clientes(ClienteID),
+    UsuarioID INT FOREIGN KEY REFERENCES Usuarios(UsuarioID),
+    FechaVenta DATETIME DEFAULT GETDATE(),
+    Total DECIMAL(10,2) NOT NULL,
+    Estado NVARCHAR(50) DEFAULT 'Completada'
+);
+
+CREATE TABLE DetalleVentas (
+    DetalleID INT PRIMARY KEY IDENTITY,
+    VentaID INT FOREIGN KEY REFERENCES Ventas(VentaID),
+    ProductoID INT FOREIGN KEY REFERENCES Productos(ProductoID),
+    Cantidad INT NOT NULL,
+    PrecioUnitario DECIMAL(10,2) NOT NULL,
+    Subtotal AS (Cantidad * PrecioUnitario)
+);
+
+CREATE TABLE LogAuditoria (
+    LogID INT PRIMARY KEY IDENTITY,
+    Tabla NVARCHAR(100),
+    Accion NVARCHAR(50),
+    UsuarioSistema NVARCHAR(100),
+    Fecha DATETIME DEFAULT GETDATE(),
+    Detalle NVARCHAR(500)
+);
+
+CREATE TABLE AlertasStock (
+    AlertaID INT PRIMARY KEY IDENTITY,
+    ProductoID INT FOREIGN KEY REFERENCES Productos(ProductoID),
+    StockActual INT,
+    Fecha DATETIME DEFAULT GETDATE(),
+    Atendida BIT DEFAULT 0
+);
+GO
+
+-- =============================================
+-- DATOS INICIALES
+-- =============================================
+
+INSERT INTO Roles VALUES ('Administrador'), ('Vendedor'), ('Almacenero');
+
+INSERT INTO Usuarios (Nombre, Email, Contrasena, RolID)
+VALUES ('Admin Principal', 'admin@tech.com', 'admin123', 1),
+       ('Juan Vendedor', 'juan@tech.com', 'juan123', 2);
+
+INSERT INTO Categorias VALUES 
+('Electrónica', 'Dispositivos electrónicos'),
+('Accesorios', 'Accesorios varios'),
+('Software', 'Licencias y software');
+
+INSERT INTO Productos (Nombre, Descripcion, Precio, Stock, StockMinimo, CategoriaID)
+VALUES 
+('Laptop HP', 'Laptop 15 pulgadas', 2500.00, 10, 3, 1),
+('Mouse Logitech', 'Mouse inalámbrico', 85.00, 25, 5, 2),
+('Teclado Mecánico', 'Teclado RGB', 150.00, 15, 4, 2),
+('Antivirus Norton', 'Licencia 1 año', 120.00, 50, 10, 3),
+('Monitor Samsung', 'Monitor 24"', 800.00, 8, 2, 1);
+
+INSERT INTO Clientes (Nombre, Email, Telefono, Direccion)
+VALUES 
+('Carlos Pérez', 'carlos@gmail.com', '999111222', 'Av. Lima 123'),
+('María López', 'maria@gmail.com', '999333444', 'Jr. Cusco 456'),
+('Empresa XYZ', 'contacto@xyz.com', '999555666', 'Av. Industrial 789');
+GO
+
+-- =============================================
+-- TRIGGERS
+-- =============================================
+
+-- Trigger 1: Reducir stock al registrar venta
+CREATE TRIGGER trg_ReducirStock
+ON DetalleVentas
+AFTER INSERT
+AS
+BEGIN
+    UPDATE Productos
+    SET Stock = Stock - i.Cantidad
+    FROM Productos p
+    INNER JOIN inserted i ON p.ProductoID = i.ProductoID;
+END;
+GO
+
+-- Trigger 2: Alerta cuando stock baja del mínimo
+CREATE TRIGGER trg_AlertaStockMinimo
+ON Productos
+AFTER UPDATE
+AS
+BEGIN
+    INSERT INTO AlertasStock (ProductoID, StockActual)
+    SELECT i.ProductoID, i.Stock
+    FROM inserted i
+    WHERE i.Stock <= i.StockMinimo;
+END;
+GO
+
+-- Trigger 3: Auditoría de productos (INSERT/UPDATE/DELETE)
+CREATE TRIGGER trg_AuditoriaProductos
+ON Productos
+AFTER INSERT, UPDATE, DELETE
+AS
+BEGIN
+    DECLARE @accion NVARCHAR(50);
+    IF EXISTS(SELECT * FROM inserted) AND EXISTS(SELECT * FROM deleted)
+        SET @accion = 'UPDATE';
+    ELSE IF EXISTS(SELECT * FROM inserted)
+        SET @accion = 'INSERT';
+    ELSE
+        SET @accion = 'DELETE';
+
+    INSERT INTO LogAuditoria (Tabla, Accion, UsuarioSistema, Detalle)
+    VALUES ('Productos', @accion, SYSTEM_USER, 
+            'Cambio registrado en tabla Productos');
+END;
+GO
+
+-- Trigger 4: Auditoría de ventas
+CREATE TRIGGER trg_AuditoriaVentas
+ON Ventas
+AFTER INSERT, UPDATE, DELETE
+AS
+BEGIN
+    DECLARE @accion NVARCHAR(50);
+    IF EXISTS(SELECT * FROM inserted) AND EXISTS(SELECT * FROM deleted)
+        SET @accion = 'UPDATE';
+    ELSE IF EXISTS(SELECT * FROM inserted)
+        SET @accion = 'INSERT';
+    ELSE
+        SET @accion = 'DELETE';
+
+    INSERT INTO LogAuditoria (Tabla, Accion, UsuarioSistema, Detalle)
+    VALUES ('Ventas', @accion, SYSTEM_USER,
+            'Cambio registrado en tabla Ventas');
+END;
+GO
+
+-- =============================================
+-- STORED PROCEDURES
+-- =============================================
+
+-- SP 1: Login de usuario
+CREATE PROCEDURE sp_Login
+    @Email NVARCHAR(100),
+    @Contrasena NVARCHAR(255)
+AS
+BEGIN
+    SELECT u.UsuarioID, u.Nombre, u.Email, r.Nombre AS Rol
+    FROM Usuarios u
+    INNER JOIN Roles r ON u.RolID = r.RolID
+    WHERE u.Email = @Email 
+      AND u.Contrasena = @Contrasena 
+      AND u.Activo = 1;
+END;
+GO
+
+-- SP 2: Registrar venta completa con transacción y rollback
+CREATE PROCEDURE sp_RegistrarVenta
+    @ClienteID INT,
+    @UsuarioID INT,
+    @ProductoID INT,
+    @Cantidad INT
+AS
+BEGIN
+    BEGIN TRANSACTION;
+    BEGIN TRY
+        DECLARE @Precio DECIMAL(10,2);
+        DECLARE @StockActual INT;
+        DECLARE @VentaID INT;
+
+        SELECT @Precio = Precio, @StockActual = Stock
+        FROM Productos WHERE ProductoID = @ProductoID;
+
+        IF @StockActual < @Cantidad
+        BEGIN
+            RAISERROR('Stock insuficiente', 16, 1);
+            ROLLBACK TRANSACTION;
+            RETURN;
+        END
+
+        INSERT INTO Ventas (ClienteID, UsuarioID, Total, Estado)
+        VALUES (@ClienteID, @UsuarioID, @Precio * @Cantidad, 'Completada');
+
+        SET @VentaID = SCOPE_IDENTITY();
+
+        INSERT INTO DetalleVentas (VentaID, ProductoID, Cantidad, PrecioUnitario)
+        VALUES (@VentaID, @ProductoID, @Cantidad, @Precio);
+
+        COMMIT TRANSACTION;
+        SELECT 'Venta registrada correctamente' AS Mensaje, @VentaID AS VentaID;
+    END TRY
+    BEGIN CATCH
+        ROLLBACK TRANSACTION;
+        SELECT ERROR_MESSAGE() AS Error;
+    END CATCH
+END;
+GO
+
+-- SP 3: Reporte de ventas por fecha
+CREATE PROCEDURE sp_ReporteVentas
+    @FechaInicio DATETIME,
+    @FechaFin DATETIME
+AS
+BEGIN
+    SELECT 
+        v.VentaID,
+        c.Nombre AS Cliente,
+        u.Nombre AS Vendedor,
+        p.Nombre AS Producto,
+        dv.Cantidad,
+        dv.PrecioUnitario,
+        dv.Subtotal,
+        v.FechaVenta,
+        v.Estado
+    FROM Ventas v
+    INNER JOIN Clientes c ON v.ClienteID = c.ClienteID
+    INNER JOIN Usuarios u ON v.UsuarioID = u.UsuarioID
+    INNER JOIN DetalleVentas dv ON v.VentaID = dv.VentaID
+    INNER JOIN Productos p ON dv.ProductoID = p.ProductoID
+    WHERE v.FechaVenta BETWEEN @FechaInicio AND @FechaFin
+    ORDER BY v.FechaVenta DESC;
+END;
+GO
+
+-- SP 4: Reporte de stock bajo
+CREATE PROCEDURE sp_ReporteStockBajo
+AS
+BEGIN
+    SELECT 
+        p.ProductoID,
+        p.Nombre,
+        p.Stock,
+        p.StockMinimo,
+        c.Nombre AS Categoria,
+        (p.Stock - p.StockMinimo) AS Diferencia
+    FROM Productos p
+    INNER JOIN Categorias c ON p.CategoriaID = c.CategoriaID
+    WHERE p.Stock <= p.StockMinimo
+    ORDER BY p.Stock ASC;
+END;
+GO
+
+-- SP 5: Reporte de ventas por producto
+CREATE PROCEDURE sp_ReporteVentasPorProducto
+    @FechaInicio DATETIME,
+    @FechaFin DATETIME
+AS
+BEGIN
+    SELECT 
+        p.Nombre AS Producto,
+        SUM(dv.Cantidad) AS TotalVendido,
+        SUM(dv.Subtotal) AS TotalIngresos
+    FROM DetalleVentas dv
+    INNER JOIN Productos p ON dv.ProductoID = p.ProductoID
+    INNER JOIN Ventas v ON dv.VentaID = v.VentaID
+    WHERE v.FechaVenta BETWEEN @FechaInicio AND @FechaFin
+    GROUP BY p.Nombre
+    ORDER BY TotalIngresos DESC;
+END;
+GO
+
+-- SP 6: Gestión de productos (INSERT/UPDATE)
+CREATE PROCEDURE sp_GestionProducto
+    @Accion NVARCHAR(10),
+    @ProductoID INT = NULL,
+    @Nombre NVARCHAR(150) = NULL,
+    @Descripcion NVARCHAR(255) = NULL,
+    @Precio DECIMAL(10,2) = NULL,
+    @Stock INT = NULL,
+    @StockMinimo INT = NULL,
+    @CategoriaID INT = NULL
+AS
+BEGIN
+    IF @Accion = 'INSERT'
+    BEGIN
+        INSERT INTO Productos (Nombre, Descripcion, Precio, Stock, StockMinimo, CategoriaID)
+        VALUES (@Nombre, @Descripcion, @Precio, @Stock, @StockMinimo, @CategoriaID);
+        SELECT 'Producto creado' AS Mensaje;
+    END
+    ELSE IF @Accion = 'UPDATE'
+    BEGIN
+        UPDATE Productos SET
+            Nombre = @Nombre,
+            Descripcion = @Descripcion,
+            Precio = @Precio,
+            Stock = @Stock,
+            StockMinimo = @StockMinimo,
+            CategoriaID = @CategoriaID
+        WHERE ProductoID = @ProductoID;
+        SELECT 'Producto actualizado' AS Mensaje;
+    END
+    ELSE IF @Accion = 'DELETE'
+    BEGIN
+        UPDATE Productos SET Activo = 0 WHERE ProductoID = @ProductoID;
+        SELECT 'Producto desactivado' AS Mensaje;
+    END
+END;
+GO
+
+-- SP 7: Obtener alertas de stock pendientes
+CREATE PROCEDURE sp_ObtenerAlertas
+AS
+BEGIN
+    SELECT 
+        a.AlertaID,
+        p.Nombre AS Producto,
+        a.StockActual,
+        p.StockMinimo,
+        a.Fecha
+    FROM AlertasStock a
+    INNER JOIN Productos p ON a.ProductoID = p.ProductoID
+    WHERE a.Atendida = 0
+    ORDER BY a.Fecha DESC;
+END;
+GO
